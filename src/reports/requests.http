@@ -1,0 +1,24 @@
+### Create a Reports
+POST http://localhost:3000/reports
+Content-Type: application/json
+
+{
+    "make": "C",
+    "model": "CC",
+    "year": 2000,
+    "mileage": 1000,
+    "lng": 33,
+    "lat": 44,
+    "price": 1000
+}
+
+### Update a Reports
+PATCH  http://localhost:3000/reports/1
+Content-Type: application/json
+
+{
+    "approve": true
+}
+
+### Query Estimate
+GET http://localhost:3000/reports?make=honda&model=civic&year=2000&mileage=1000&lng=13&lat=13
